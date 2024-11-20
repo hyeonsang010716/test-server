@@ -1,0 +1,87 @@
+# Cinema 4D 수업 교재 요약
+
+## 02. 프롬프트 작성법
+
+### 1. Parameter 작성법
+- **Aspect Ratio (비율)**
+  - 이미지의 비율을 설정할 수 있습니다.
+  - 예시: `--ar 4:5`
+
+- **제거 (no)**
+  - 원하는 일정 부분을 제거할 수 있는 파라미터입니다.
+  - 예시: `< party -- no balloon >`
+
+- **Stylize (스타일라이즈)**
+  - 이미지의 미학적인 퀄리티를 조절하는 파라미터입니다.
+  - 값 범위: 0 ~ 750 (기본값: 100)
+  - 예시: `children drawing cat --s 750`
+
+### 2. Describe 기능
+- 인터넷에 있는 이미지 스타일로 비슷한 이미지를 생성하기 위해 사용합니다.
+- 이미지 파일 업로드 또는 링크를 통해 4가지 프롬프트를 생성합니다.
+- 생성된 프롬프트를 번역기로 단어를 바꾸어 이미지를 생성할 수 있습니다.
+- 예시: `/describe image link`
+
+### 3. 프롬프트 작성법
+- 프롬프트를 복사한 후 번역기를 사용해 한국어로 번역하고, 문맥에 맞게 단어를 수정하여 다른 이미지 결과물을 생성할 수 있습니다.
+- 예시: `A cartoonish steampunk woman with a monocle and mustache, flying on his heli-moc hang glider made of steam engine parts while holding a coffee in hand. --ar 7:8`
+
+### 4. Chat GPT를 활용한 이미지 생성 방법
+- Chat GPT에서 Midjourney Prompt Generator(v6)을 활용해 원하는 이미지를 편하게 글로 작성한 후 번역하여 활용합니다.
+- 예시: `A 3D character model of Hansel, a young boy with messy blonde hair, wearing traditional fairy tale clothing. --v 6.0 --ar 3:2`
+
+### 5. 기타 기능
+- **Job ID와 Seed 추출하기**
+  - 생성한 이미지의 Job ID를 통해 이미지를 다시 불러와 생성할 수 있습니다.
+  - 예시: `Job ID: b220b44a-334f-4dbd-8f32-a34305f97155 seed 2694426265`
+
+- **이미지 삭제하기**
+  - 갤러리에서 보고 싶지 않거나 명령어를 잘못 입력했을 때 이미지를 삭제할 수 있습니다.
+  - 예시: 생성된 이미지 우클릭 후 "반응 추가하기"에서 "X" 아이콘 클릭
+
+- **Info**
+  - 내가 생성한 이미지의 개수와 각 정보를 표시해줍니다.
+  - 예시: `/info`
+
+- **Show**
+  - Job ID를 입력하면 해당 Job ID에 맞는 이미지를 보여줍니다.
+  - 예시: `/show Job ID`
+
+- **Setting**
+  - 다양한 설정을 조정할 수 있습니다.
+  - 예시: `Midjourney Model V6 [ALPHA]`
+
+- **Shorten**
+  - 이미지의 프롬프트를 간결하게 축약해 줍니다.
+  - 예시: `/shorten prompt`
+
+- **Style Reference**
+  - 이미지의 아트 스타일을 참고하는 데 사용합니다.
+  - 예시: `--sref urlA`
+
+- **Character Reference**
+  - 미드저니에서 생성한 이미지를 참고하고, 다른 곳의 이미지는 작동하지 않습니다.
+  - 예시: `--cw 100`
+
+- **Quality**
+  - 기본값이 가장 높은 Quality입니다.
+  - 예시: `--quality .25 / 5 / 1`
+
+- **Repeat**
+  - 똑같은 결과물을 많이 생성하고 싶을 때 사용합니다.
+
+- **Seed**
+  - Seed 번호를 알게 되면 비슷한 이미지를 계속해서 생성할 수 있습니다.
+
+- **Stop**
+  - 이미지의 생성 중간 과정을 멈추는 방식으로 미완성 결과물을 만들 때 사용합니다.
+
+- **Style Raw**
+  - Style raw를 반영시키면 아이콘의 충실한 이미지를 생성하게 됩니다.
+
+- **Stylize**
+  - Stylize 값이 높을수록 프롬프트와 다른 이미지를 생성합니다.
+  - 값이 높을수록 아이가 그린 그림과 같이 퀄리티가 낮아집니다.
+
+- **Tile**
+  - Seamless Texture Pattern 사이트를 활용해 반복해도 자연스러운 이미지를 생성할 수 있습니다.
